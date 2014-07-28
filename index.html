@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sour Banner</title>
+<meta name="HandheldFriendly" content="true">
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="true" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<style>
+
+  body{margin: 0; padding: 0}
+  #ad-wrp{
+    position: relative;
+    line-height:0;
+    overflow: hidden;
+    background: #f7ec00;
+    width: 100%;
+  }
+
+  #ad-wrp img{
+    width: 100%;
+  }
+
+
+  #first-cta{
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: first 10s infinite;
+    -webkit-animation: first 10s infinite;
+    -moz-animation: first 10s infinite;
+  }
+
+  #second-cta{
+    position: absolute;
+    top: 0;
+    animation: second 10s infinite;
+    -webkit-animation: second 10s infinite;
+    -moz-animation: second 10s infinite;
+  }
+
+  #small-logo{
+    position: absolute;
+    top: 0;
+  }
+
+  #slide-bottom{
+    position: absolute;
+    top: 0;
+    animation: slide-bottom 10s infinite;
+    -webkit-animation: slide-bottom 10s infinite;
+    -moz-animation: slide-bottom 10s infinite;
+  }
+
+  #slide-left{
+    position: absolute;
+    top: 0;
+    animation: slide-left 10s infinite;
+    -webkit-animation: slide-left 10s infinite;
+    -moz-animation: slide-left 10s infinite;
+  }
+
+  #slide-top{
+    position: absolute;
+    top: 0;
+    animation: slide-top 10s infinite;
+    -webkit-animation: slide-top 10s infinite;
+    -moz-animation: slide-top 10s infinite;
+  }
+
+
+  @keyframes slide-top{
+    0% {transform: translate(0, -60%);}
+    70% {transform: translate(0, -60%);}
+    75% {transform: translate(0, 0);}
+    97% {transform: translate(0, 0);}
+    100% {transform: translate(0, -60%);}
+  }
+
+  @-webkit-keyframes slide-top{
+    0% {-webkit-transform: translate(0, -60%);}
+    70% {-webkit-transform: translate(0, -60%);}
+    75% {-webkit-transform: translate(0, 0);}
+    97% {-webkit-transform: translate(0, 0);}
+    100% {-webkit-transform: translate(0, -60%);}
+  }
+
+  @-moz-keyframes slide-top{
+    0% {-moz-transform: translate(0, -60%);}
+    70% {-moz-transform: translate(0, -60%);}
+    75% {-moz-transform: translate(0, 0);}
+    97% {-moz-transform: translate(0, 0);}
+    100% {-moz-transform: translate(0, -60%);}
+  }
+
+  @keyframes slide-left{
+    0% {transform: translate(-8%, 0);}
+    40% {transform: translate(-8%, 0);}
+    45% {transform: translate(0, 0);}
+    65% {transform: translate(0, 0);}
+    70% {transform: translate(-8%, 0);}
+    100% {transform: translate(-8%, 0);}
+  }
+
+  @-webkit-keyframes slide-left{
+    0% {-webkit-transform: translate(-8%, 0);}
+    40% {-webkit-transform: translate(-8%, 0);}
+    45% {-webkit-transform: translate(0, 0);}
+    65% {-webkit-transform: translate(0, 0);}
+    70% {-webkit-transform: translate(-8%, 0);}
+    100% {-webkit-transform: translate(-8%, 0);}
+  }
+
+  @-moz-keyframes slide-left{
+    0% {-moz-transform: translate(-8%, 0);}
+    40% {-moz-transform: translate(-8%, 0);}
+    45% {-moz-transform: translate(0, 0);}
+    65% {-moz-transform: translate(0, 0);}
+    70% {-moz-transform: translate(-8%, 0);}
+    100% {-moz-transform: translate(-8%, 0);}
+  }
+
+  @keyframes slide-bottom{
+    0% {transform: translate(0, 100%);}
+    5% {transform: translate(0, 0);}
+    20% {transform: translate(0, 0);}
+    22% {transform: translate(0, 100%);}
+    100% {transform: translate(0, 100%);}
+  }
+
+  @-webkit-keyframes slide-bottom{
+    0% {-webkit-transform: translate(0, 100%);}
+    5% {-webkit-transform: translate(0, 0);}
+    20% {-webkit-transform: translate(0, 0);}
+    22% {-webkit-transform: translate(0, 100%);}
+    100% {-webkit-transform: translate(0, 100%);}
+  }
+
+  @-moz-keyframes slide-bottom{
+    0% {-moz-transform: translate(0, 100%);}
+    5% {-moz-transform: translate(0, 0);}
+    20% {-moz-transform: translate(0, 0);}
+    22% {-moz-transform: translate(0, 100%);}
+    100% {-moz-transform: translate(0, 100%);}
+  }
+
+  @keyframes first{
+    0% {opacity: 0;}
+    5% {opacity: 1;}
+    35% {opacity: 1;}
+    40%{opacity: 0;}
+    100%{opacity: 0;}
+  }
+
+  @-webkit-keyframes first{
+    0% {opacity: 0;}
+    5% {opacity: 1;}
+    35% {opacity: 1;}
+    40%{opacity: 0;}
+    100%{opacity: 0;}
+  }
+
+  @-moz-keyframes first{
+    0% {opacity: 0;}
+    5% {opacity: 1;}
+    35% {opacity: 1;}
+    40%{opacity: 0;}
+    100%{opacity: 0;}
+  }
+
+  @keyframes second{
+    0% {opacity: 0;}
+    40%{opacity: 0;}
+    45%{opacity: 1;}
+  }
+
+  @-webkit-keyframes second{
+    0% {opacity: 0;}
+    40%{opacity: 0;}
+    45%{opacity: 1;}
+  }
+
+  @-moz-keyframes second{
+    0% {opacity: 0;}
+    40%{opacity: 0;}
+    45%{opacity: 1;}
+  }
+
+
+</style>
+</head>
+<body>
+  <div id="ad-wrp">
+    <img src="img/package.png" id="main-image" alt="package" />
+    <img src="img/mad_sour.png" id="first-cta" alt="mad sour" />
+    <img src="img/facebook.png" id="second-cta" alt="social" />
+    <img src="img/logo.png" id="small-logo" alt="small logo" />
+    <img src="img/kid_bottom.png" id="slide-bottom" alt="kid bottom" />
+    <img src="img/kid_left.png" id="slide-left" alt="kid left" />
+    <img src="img/kid_top.png" id="slide-top" alt="kid top" />
+  </div>
+</body>
+</html>
